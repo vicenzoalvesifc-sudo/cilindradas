@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 390">
+<rect width="600" height="390" rx="24" fill="#151f32"/>
+<path d="M270 45 L150 275 Q270 320 390 275 Z" fill="#246de0" stroke="#a8d0ff" stroke-width="4"/>
+<ellipse cx="270" cy="275" rx="120" ry="40" fill="#3987ff" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M270 45 V275 M270 275 H390 M270 45 L390 275" stroke="white" stroke-width="3" stroke-dasharray="7 6"/>
+<g fill="#fff" font-family="Arial" font-size="19">
+<text x="405" y="145">Geratriz (g)</text><path d="M395 150 L350 170" stroke="#fff" stroke-width="2"/>
+<text x="290" y="180">Altura (h)</text><path d="M285 185 L275 200" stroke="#fff" stroke-width="2"/>
+<text x="405" y="285">Raio (r)</text><path d="M395 280 L350 275" stroke="#fff" stroke-width="2"/>
+<text x="270" y="365" text-anchor="middle" fill="#dbeafe">PARTES DO CONE</text>
+</g></svg>

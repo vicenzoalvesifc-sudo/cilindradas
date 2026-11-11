@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360">
+<rect width="500" height="360" rx="24" fill="#151f32"/>
+<ellipse cx="250" cy="85" rx="115" ry="38" fill="#3987ff" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M135 85 V265 C135 286 186 303 250 303 S365 286 365 265 V85" fill="#246de0" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M135 265 C135 286 186 303 250 303 S365 286 365 265" fill="none" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M250 85 V265 M250 85 L365 85" stroke="#fff" stroke-width="3" stroke-dasharray="7 6"/>
+<text x="265" y="178" fill="white" font-family="Arial" font-size="22">h</text>
+<text x="300" y="72" fill="white" font-family="Arial" font-size="22">r</text>
+<text x="250" y="340" text-anchor="middle" fill="#dbeafe" font-family="Arial" font-size="20">CILINDRO</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 390">
+<rect width="600" height="390" rx="24" fill="#151f32"/>
+<ellipse cx="270" cy="95" rx="105" ry="34" fill="#3987ff" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M165 95 V275 C165 294 212 310 270 310 S375 294 375 275 V95" fill="#246de0" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M165 275 C165 294 212 310 270 310 S375 294 375 275" fill="none" stroke="#a8d0ff" stroke-width="4"/>
+<path d="M270 95 V275 M270 95 H375" stroke="white" stroke-width="3" stroke-dasharray="7 6"/>
+<g fill="#fff" font-family="Arial" font-size="19">
+<text x="390" y="180">Altura (h)</text><path d="M375 174 L365 174" stroke="#fff" stroke-width="2"/>
+<text x="390" y="95">Raio (r)</text><path d="M375 90 L330 90" stroke="#fff" stroke-width="2"/>
+<text x="42" y="95">Base circular</text><path d="M150 100 L170 100" stroke="#fff" stroke-width="2"/>
+<text x="270" y="365" text-anchor="middle" fill="#dbeafe">PARTES DO CILINDRO</text>
+</g></svg>

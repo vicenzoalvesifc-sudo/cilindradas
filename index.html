@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoClass - Geometria Espacial</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>GeoClass</h1>
+        <p>Aprenda geometria espacial do zero</p>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2>Conteúdo</h2>
+
+            <nav>
+                <button onclick="mostrarAula('introducao')">01. Introdução</button>
+                <button onclick="mostrarAula('cilindro')">02. Cilindros</button>
+                <button onclick="mostrarAula('formulaCilindro')">03. Fórmulas do cilindro</button>
+                <button onclick="mostrarAula('cone')">04. Cones</button>
+                <button onclick="mostrarAula('formulaCone')">05. Fórmulas do cone</button>
+                <button onclick="mostrarAula('comparacao')">06. Comparação</button>
+                <button onclick="mostrarAula('exercicios')">07. Exercícios</button>
+                <button onclick="mostrarAula('simulado')">08. Simulado</button>
+            </nav>
+
+            <div class="progresso">
+                <h3>Seu progresso</h3>
+                <div class="barra">
+                    <div id="barraProgresso"></div>
+                </div>
+                <p id="textoProgresso">0% concluído</p>
+            </div>
+        </aside>
+
+
+        <main class="conteudo">
+
+            <!-- INTRODUÇÃO -->
+
+            <section id="introducao" class="aula ativa">
+
+                <h2>Bem-vindo à Geometria Espacial!</h2>
+
+                <p>
+                    Neste curso você aprenderá sobre dois sólidos
+                    geométricos muito importantes: cilindros e cones.
+                </p>
+
+                <h3>O que é geometria espacial?</h3>
+
+                <p>
+                    É a parte da matemática que estuda figuras
+                    tridimensionais, ou seja, figuras que possuem
+                    altura, largura e profundidade.
+                </p>
+
+                <h3>Exemplos no cotidiano</h3>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Cilindro</h3>
+                        <img src="imagens/cilindro.png" alt="Representação de um cilindro">
+                        <p>Exemplo: lata de refrigerante.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Cone</h3>
+                        <img src="imagens/cone.png" alt="Representação de um cone">
+                        <p>Exemplo: casquinha de sorvete.</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- CILINDRO -->
+
+            <section id="cilindro" class="aula">
+
+                <h2>02. Conhecendo os cilindros</h2>
+
+                <p>
+                    O cilindro é um sólido geométrico que possui
+                    duas bases circulares paralelas e uma superfície
+                    lateral curva.
+                </p>
+
+                <h3>Partes do cilindro</h3>
+
+                <ul>
+                    <li><strong>Base:</strong> os dois círculos.</li>
+                    <li><strong>Raio:</strong> distância do centro até a borda da base.</li>
+                    <li><strong>Diâmetro:</strong> distância de uma extremidade à outra, passando pelo centro.</li>
+                    <li><strong>Altura:</strong> distância entre as duas bases.</li>
+                </ul>
+
+                <img src="imagens/cilindro-identificado.png"
+                     alt="Cilindro com suas partes identificadas">
+
+                <div class="dica">
+                    <strong>Dica:</strong>
+                    O diâmetro sempre mede o dobro do raio!
+                    D = 2 × r
+                </div>
+
+            </section>
+
+
+            <!-- FORMULAS CILINDRO -->
+
+            <section id="formulaCilindro" class="aula">
+
+                <h2>03. Fórmulas do cilindro</h2>
+
+                <h3>Área da base</h3>
+                <p>A área da base é calculada pela fórmula:</p>
+                <div class="formula">Ab = π × r²</div>
+
+                <h3>Área lateral</h3>
+                <div class="formula">Al = 2 × π × r × h</div>
+
+                <h3>Área total</h3>
+                <div class="formula">At = 2 × π × r² + 2 × π × r × h</div>
+
+                <h3>Volume</h3>
+                <div class="formula">V = π × r² × h</div>
+
+                <div class="exemplo">
+                    <h3>Exemplo resolvido</h3>
+
+                    <p>
+                        Um cilindro possui raio de 3 cm e altura de 5 cm.
+                        Qual é seu volume? Considere π = 3,14.
+                    </p>
+
+                    <p>Fórmula:</p>
+                    <div class="formula">V = π × r² × h</div>
+
+                    <p>Substituindo:</p>
+                    <div class="formula">V = 3,14 × 3² × 5</div>
+
+                    <p>Resultado:</p>
+                    <div class="formula">V = 141,3 cm³</div>
+                </div>
+
+            </section>
+
+
+            <!-- CONE -->
+
+            <section id="cone" class="aula">
+
+                <h2>04. Conhecendo os cones</h2>
+
+                <p>
+                    O cone é um sólido geométrico que possui
+                    uma base circular e um vértice.
+                </p>
+
+                <h3>Partes do cone</h3>
+
+                <ul>
+                    <li><strong>Base:</strong> círculo inferior.</li>
+                    <li><strong>Raio:</strong> distância do centro até a borda.</li>
+                    <li><strong>Altura:</strong> distância perpendicular entre a base e o vértice.</li>
+                    <li><strong>Vértice:</strong> ponto superior do cone.</li>
+                    <li><strong>Geratriz:</strong> segmento que liga o vértice à borda da base.</li>
+                </ul>
+
+                <img src="imagens/cone-identificado.png"
+                     alt="Cone com suas partes identificadas">
+
+                <div class="dica">
+                    <strong>Atenção:</strong>
+                    A geratriz não é a mesma coisa que a altura!
+                </div>
+
+            </section>
+
+
+            <!-- FORMULAS CONE -->
+
+            <section id="formulaCone" class="aula">
+
+                <h2>05. Fórmulas do cone</h2>
+
+                <h3>Área da base</h3>
+                <div class="formula">Ab = π × r²</div>
+
+                <h3>Área lateral</h3>
+                <div class="formula">Al = π × r × g</div>
+
+                <h3>Área total</h3>
+                <div class="formula">At = π × r² + π × r × g</div>
+
+                <h3>Volume</h3>
+                <div class="formula">V = (π × r² × h) / 3</div>
+
+                <h3>Geratriz</h3>
+                <div class="formula">g² = r² + h²</div>
+
+                <div class="exemplo">
+                    <h3>Exemplo resolvido</h3>
+
+                    <p>
+                        Um cone possui raio de 3 cm e altura de 4 cm.
+                        Qual é sua geratriz?
+                    </p>
+
+                    <div class="formula">g² = 3² + 4²</div>
+                    <div class="formula">g² = 9 + 16</div>
+                    <div class="formula">g² = 25</div>
+                    <div class="formula">g = 5 cm</div>
+                </div>
+
+            </section>
+
+
+            <!-- COMPARAÇÃO -->
+
+            <section id="comparacao" class="aula">
+
+                <h2>06. Cilindro x Cone</h2>
+
+                <p>
+                    Os dois possuem bases circulares, mas existem
+                    diferenças importantes entre eles.
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Cilindro</th>
+                        <th>Cone</th>
+                    </tr>
+
+                    <tr>
+                        <td>Bases</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vértice</td>
+                        <td>Não possui</td>
+                        <td>Possui 1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Superfície lateral</td>
+                        <td>Curva</td>
+                        <td>Curva</td>
+                    </tr>
+
+                    <tr>
+                        <td>Volume</td>
+                        <td>πr²h</td>
+                        <td>πr²h / 3</td>
+                    </tr>
+                </table>
+
+                <div class="dica">
+                    Se um cone e um cilindro possuem a mesma base
+                    e a mesma altura, o volume do cone equivale
+                    a um terço do volume do cilindro.
+                </div>
+
+            </section>
+
+
+            <!-- EXERCICIOS -->
+
+            <section id="exercicios" class="aula">
+
+                <h2>07. Exercícios resolvidos</h2>
+
+                <h3>Questão 1</h3>
+
+                <p>
+                    Um cilindro possui raio de 2 cm e altura de 10 cm.
+                    Qual é seu volume? Considere π = 3.
+                </p>
+
+                <button onclick="mostrarResposta('resposta1')">
+                    Ver resolução
+                </button>
+
+                <div id="resposta1" class="resposta">
+                    V = π × r² × h<br>
+                    V = 3 × 2² × 10<br>
+                    V = 120 cm³
+                </div>
+
+
+                <h3>Questão 2</h3>
+
+                <p>
+                    Um cone possui raio de 3 cm e altura de 6 cm.
+                    Qual é seu volume? Considere π = 3.
+                </p>
+
+                <button onclick="mostrarResposta('resposta2')">
+                    Ver resolução
+                </button>
+
+                <div id="resposta2" class="resposta">
+                    V = (π × r² × h) / 3<br>
+                    V = (3 × 3² × 6) / 3<br>
+                    V = 54 cm³
+                </div>
+
+            </section>
+
+
+            <!-- SIMULADO -->
+
+            <section id="simulado" class="aula">
+
+                <h2>08. Simulado final</h2>
+
+                <p>
+                    Teste seus conhecimentos com questões sobre
+                    cilindros e cones.
+                </p>
+
+                <p>O simulado terá 10 questões e correção automática.</p>
+
+                <button onclick="iniciarSimulado()">
+                    Começar simulado
+                </button>
+
+                <div id="areaSimulado"></div>
+
+            </section>
+
+
+            <!-- NAVEGAÇÃO -->
+
+            <div class="navegacao">
+                <button id="anterior" onclick="aulaAnterior()">
+                    ← Anterior
+                </button>
+
+                <button id="proximo" onclick="proximaAula()">
+                    Próximo →
+                </button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>GeoClass © 2026 - Plataforma de estudos de matemática</p>
+    </footer>
+
+    <!-- JUMPSCARE -->
+<div id="jumpscare">
+
+    <div class="monster">
+        👹
+    </div>
+
+    <h1>VOCÊ FOI AVISADO.</h1>
+
+    <button onclick="fecharJumpscare()">
+        Voltar ao GeoClass
+    </button>
+
+</div>
+</body>
+</html>
